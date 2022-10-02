@@ -1,0 +1,21 @@
+{
+  "name": "430-project-1",
+  "version": "1.0.0",
+  "description": "Package for 430 Project 1",
+  "main": "./src/server.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "pretest": "eslint ./src --fix",
+    "test": "echo \"Tests complete\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lpd8987/430-Project-1.git"
+  },
+  "author": "Louie D'Angelo",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/lpd8987/430-Project-1/issues"
+  },
+  "homepage": "https://github.com/lpd8987/430-Project-1#readme"
+}

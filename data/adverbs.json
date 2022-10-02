@@ -1,0 +1,374 @@
+[
+    {
+        "word": "non",
+        "definition": "not"
+    },
+    {
+        "word": "piu'",
+        "definition": "more"
+    },
+    {
+        "word": "gia'",
+        "definition": "already"
+    },
+    {
+        "word": "cosi'",
+        "definition": "so"
+    },
+    {
+        "word": "poi",
+        "definition": "then"
+    },
+    {
+        "word": "ancora",
+        "definition": "still"
+    },
+    {
+        "word": "quanto",
+        "definition": "how much"
+    },
+    {
+        "word": "qui",
+        "definition": "here"
+    },
+    {
+        "word": "molto",
+        "definition": "very"
+    },
+    {
+        "word": "meno",
+        "definition": "less"
+    },
+    {
+        "word": "dove",
+        "definition": "where"
+    },
+    {
+        "word": "cioe'",
+        "definition": "namely"
+    },
+    {
+        "word": "prima",
+        "definition": "before"
+    },
+    {
+        "word": "dopo",
+        "definition": "after"
+    },
+    {
+        "word": "quasi",
+        "definition": "almost"
+    },
+    {
+        "word": "invece",
+        "definition": "instead"
+    },
+    {
+        "word": "mai",
+        "definition": "never"
+    },
+    {
+        "word": "tanto",
+        "definition": "a lot of"
+    },
+    {
+        "word": "come",
+        "definition": "as"
+    },
+    {
+        "word": "bene",
+        "definition": "well"
+    },
+    {
+        "word": "ora",
+        "definition": "now"
+    },
+    {
+        "word": "ci",
+        "definition": "there"
+    },
+    {
+        "word": "poco",
+        "definition": "little"
+    },
+    {
+        "word": "forse",
+        "definition": "perhaps"
+    },
+    {
+        "word": "proprio",
+        "definition": "exactly"
+    },
+    {
+        "word": "pure",
+        "definition": "as well"
+    },
+    {
+        "word": "oggi",
+        "definition": "today"
+    },
+    {
+        "word": "almeno",
+        "definition": "at least"
+    },
+    {
+        "word": "circa",
+        "definition": "about"
+    },
+    {
+        "word": "troppo",
+        "definition": "too much"
+    },
+    {
+        "word": "insieme",
+        "definition": "together"
+    },
+    {
+        "word": "oltre",
+        "definition": "further"
+    },
+    {
+        "word": "certo",
+        "definition": "of course"
+    },
+    {
+        "word": "fuori",
+        "definition": "outside"
+    },
+    {
+        "word": "meglio",
+        "definition": "better"
+    },
+    {
+        "word": "appunto",
+        "definition": "exactly"
+    },
+    {
+        "word": "piuttosto",
+        "definition": "rather"
+    },
+    {
+        "word": "ormai",
+        "definition": "by now"
+    },
+    {
+        "word": "inoltre",
+        "definition": "furthermore"
+    },
+    {
+        "word": "appena",
+        "definition": "as soon as"
+    },
+    {
+        "word": "infine",
+        "definition": "finally"
+    },
+    {
+        "word": "intorno",
+        "definition": "around"
+    },
+    {
+        "word": "quindi",
+        "definition": "so, then"
+    },
+    {
+        "word": "direttamente",
+        "definition": "directly"
+    },
+    {
+        "word": "veramente",
+        "definition": "really"
+    },
+    {
+        "word": "certamente",
+        "definition": "certainly"
+    },
+    {
+        "word": "comunque",
+        "definition": "anyway"
+    },
+    {
+        "word": "particolarmente",
+        "definition": "particularly"
+    },
+    {
+        "word": "avanti",
+        "definition": "forward"
+    },
+    {
+        "word": "allora",
+        "definition": "then"
+    },
+    {
+        "word": "probabilmente",
+        "definition": "probably"
+    },
+    {
+        "word": "via",
+        "definition": "away"
+    },
+    {
+        "word": "presto",
+        "definition": "soon"
+    },
+    {
+        "word": "abbastanza",
+        "definition": "enough"
+    },
+    {
+        "word": "all'interno",
+        "definition": "indoors"
+    },
+    {
+        "word": "tardi",
+        "definition": "late"
+    },
+    {
+        "word": "facilmente",
+        "definition": "easily"
+    },
+    {
+        "word": "vicino",
+        "definition": "close"
+    },
+    {
+        "word": "fa",
+        "definition": "ago"
+    },
+    {
+        "word": "addirittura",
+        "definition": "even"
+    },
+    {
+        "word": "naturalmente",
+        "definition": "naturally, of course"
+    },
+    {
+        "word": "affatto",
+        "definition": "at all"
+    },
+    {
+        "word": "la'",
+        "definition": "tutto"
+    },
+    {
+        "word": "completamente",
+        "definition": "completely"
+    },
+    {
+        "word": "finalmente",
+        "definition": "finally"
+    },
+    {
+        "word": "immediatamente",
+        "definition": "immediately"
+    },
+    {
+        "word": "esclusivamente",
+        "definition": "exclusively"
+    },
+    {
+        "word": "pertanto",
+        "definition": "therefore"
+    },
+    {
+        "word": "quando",
+        "definition": "when"
+    },
+    {
+        "word": "chiaramente",
+        "definition": "clearly"
+    },
+    {
+        "word": "nemmeno",
+        "definition": "not even"
+    },
+    {
+        "word": "ecco",
+        "definition": "here"
+    },
+    {
+        "word": "assolutamente",
+        "definition": "absolutely"
+    },
+    {
+        "word": "peraltro",
+        "definition": "moreover"
+    },
+    {
+        "word": "male",
+        "definition": "badly"
+    },
+    {
+        "word": "necessariamente",
+        "definition": "necessarily"
+    },
+    {
+        "word": "accanto",
+        "definition": "near"
+    },
+    {
+        "word": "altresi'",
+        "definition": "generalmente"
+    },
+    {
+        "word": "davvero",
+        "definition": "truly"
+    },
+    {
+        "word": "dietro",
+        "definition": "behind"
+    },
+    {
+        "word": "rispettivamente",
+        "definition": "respectively"
+    },
+    {
+        "word": "insomma",
+        "definition": "in short"
+    },
+    {
+        "word": "adesso",
+        "definition": "now"
+    },
+    {
+        "word": "evidentemente",
+        "definition": "apparently"
+    },
+    {
+        "word": "perfettamente",
+        "definition": "perfectly"
+    },
+    {
+        "word": "altrimenti",
+        "definition": "otherwise"
+    },
+    {
+        "word": "principalmente",
+        "definition": "mainly"
+    },
+    {
+        "word": "innanzi",
+        "definition": "forward"
+    },
+    {
+        "word": "altrove",
+        "definition": "elsewhere"
+    },
+    {
+        "word": "davanti",
+        "definition": "in front"
+    },
+    {
+        "word": "dentro",
+        "definition": "inside"
+    },
+    {
+        "word": "intanto",
+        "definition": "in the meantime"
+    },
+    {
+        "word": "essenzialmente",
+        "definition": "essentially"
+    }
+]
