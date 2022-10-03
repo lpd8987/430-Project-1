@@ -31,6 +31,7 @@ const parseParams = (request, response, handlerFunction) => {
 const handlePOST = (request, response, parsedURL) => {
   switch (parsedURL.pathname) {
     case "/addVocab":
+    default:
       parseParams(request, response, jsonHandler.postVocab)
       break;
   }
