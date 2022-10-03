@@ -9,12 +9,20 @@
 
     <script>
         const handleResponse = async (response) => {
+            
+            //Only time that something is not returned is when updated
+            if(response.status === 204){
+                document.querySelector("#content").innerHTML = "<h2>Updated Successfully</h2>";
+                return;
+            }
+
             let jsonResponse = await response.json();
+
             console.log(jsonResponse);
 
             //Print a message if not printing a list
             if(jsonResponse.message){
-                document.querySelector("#content").innerHTML = jsonResponse.message;
+                document.querySelector("#content").innerHTML = `<h2>${jsonResponse.message}</h2>`;
                 return;
             }
 
@@ -32,6 +40,8 @@
 
         //POST REQUESTS
         const postRequest = async(form) => {
+            clearDivs(document.querySelector("#content"));
+
             const action = form.getAttribute("action");
             const method = form.getAttribute("method");
 
@@ -103,6 +113,7 @@
 
             let addBtn = document.createElement("button");
             addBtn.innerHTML = "Add to Vocab List"
+            newDiv.appendChild(addBtn);
             //addBtn.onclick = post function (will keep blank for now)
 
             targetElement.appendChild(newDiv);

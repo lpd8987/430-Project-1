@@ -78,7 +78,7 @@ const postVocab = (request, response, body) => {
   //the italian word, the type of word, and its definition
   if(!body.word || !body.type || !body.definition ) {
     jsonObj.id = "missingParams";
-    return getJSON(request, response, jsonObj, 400);
+    return getJSON(request, response, JSON.stringify(jsonObj), 400);
   }
 
   //status is "update" by default
@@ -88,7 +88,10 @@ const postVocab = (request, response, body) => {
   if(!vocabList[body.word]){
     status = 201;
     vocabList[body.word] = {};
+    vocabList.push(vocabList[body.word]);
   }
+
+  //console.log(vocabList[body.word]);
 
   //Assign data
   vocabList[body.word].word = body.word;
@@ -97,8 +100,7 @@ const postVocab = (request, response, body) => {
 
   if(status === 201){
     jsonObj.message = "Created Successfully";
-    console.log("here.")
-    return getJSON(request, response, jsonObj, status);
+    return getJSON(request, response, JSON.stringify(jsonObj), status);
   }
 
   return returnJSONHead(request, response, status);
@@ -115,7 +117,6 @@ const serverError = (request, response) => {
 };
 
 module.exports = {
-  getJSON,
   getVerbJSON,
   getNounJSON,
   getAdjectiveJSON,

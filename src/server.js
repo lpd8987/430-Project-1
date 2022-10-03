@@ -31,7 +31,7 @@ const parseParams = (request, response, handlerFunction) => {
 const handlePOST = (request, response, parsedURL) => {
   switch (parsedURL.pathname) {
     case "/addVocab":
-      parseParams(request, request, jsonHandler.postVocab)
+      parseParams(request, response, jsonHandler.postVocab)
       break;
   }
 };
@@ -73,6 +73,7 @@ const handleHEAD = (request, response, parsedURL) => {
     case '/nouns':
     case '/adjectives':
     case '/adverbs':
+    case '/vocabulary':
       jsonHandler.returnListHead(request, response);
       break;
     default:
