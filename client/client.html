@@ -17,6 +17,7 @@
             }
         }
 
+        //GET REQUESTS
         const fetchRequest = async(button) => {
             clearDivs(document.querySelector("#content"));
             const url = button.value;
@@ -30,6 +31,7 @@
             handleResponse(response);
         };
 
+        //Creates the divs that the content comes from
         function createDiv(word, type, definition, targetElement)
         {
             let typeAbbrev = "";
@@ -70,6 +72,7 @@
             targetElement.appendChild(newDiv);
         }
 
+        //Clears all custom divs from the screen
         function clearDivs(targetElement) {
             let divs = document.querySelectorAll(".data-entry");
             if(divs.length > 0){
@@ -79,6 +82,7 @@
             }
         }
 
+        //Setup buttons and event listeners
         const init = () => {
             const getVerbsBtn = document.querySelector("#get-verbs");
             getVerbsBtn.addEventListener("click", () => {fetchRequest(getVerbsBtn)});
@@ -91,7 +95,6 @@
 
             const getAdverbsBtn = document.querySelector("#get-adverbs");
             getAdverbsBtn.addEventListener("click", () => {fetchRequest(getAdverbsBtn)});
-
         };
 
         window.onload = init;
@@ -103,6 +106,8 @@
     <button id="get-nouns" value="/nouns">GET Nouns</button>
     <button id="get-adjectives" value="/adjectives">GET Adjectives</button>
     <button id="get-adverbs" value="/adverbs">GET Adverbs</button>
+
+    <button id="get-vocab-list" value="/vocabulary">GET Vocab List</button>
 
     <div id="content">
 
