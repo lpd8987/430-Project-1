@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clientStyle.css">
+    <title>Appunti Italiani API</title>
+
+    <script>
+        const handleResponse = async (response) => {
+            let jsonResponse = await response.json();
+            console.log(jsonResponse);
+
+            for(let i = 0; i < jsonResponse.length; i++){
+                createDiv(jsonResponse[i].word, jsonResponse[i].type, jsonResponse[i].definition, document.querySelector("#content"));
+            }
+        }
+
+        const fetchRequest = async(button) => {
+            clearDivs(document.querySelector("#content"));
+            const url = button.value;
+            let response = await fetch(url, {
+                method: 'GET',
+                headers: {
+                    'Accept': 'application/json'
+                },
+            });
+
+            handleResponse(response);
+        };
+
+        function createDiv(word, type, definition, targetElement)
+        {
+            let typeAbbrev = "";
+            switch(type){
+                case "verb":
+                    typeAbbrev = "v."
+                    break;
+                case "noun":
+                    typeAbbrev = "n."
+                    break;
+                case "adjective":
+                    typeAbbrev = "adj." 
+                    break;
+                case "adverb":
+                    typeAbbrev = "adv." 
+                    break;
+            }
+            /*Format should look something like:
+            Word (part-of-speech)
+            definition
+            [addBtn] [removeBtn]*/
+
+            let newDiv = document.createElement("div");
+            newDiv.classList.add("data-entry");
+            
+            let divTitle = document.createElement("h2");
+            divTitle.innerHTML = `${word} ${typeAbbrev}`;
+            newDiv.appendChild(divTitle);
+
+            let divContent = document.createElement("p");
+            divContent.innerHTML = definition;
+            newDiv.appendChild(divContent);
+
+            let addBtn = document.createElement("button");
+            addBtn.innerHTML = "Add to Vocab List"
+            //addBtn.onclick = post function (will keep blank for now)
+
+            targetElement.appendChild(newDiv);
+        }
+
+        function clearDivs(targetElement) {
+            let divs = document.querySelectorAll(".data-entry");
+            if(divs.length > 0){
+                for(let i = divs.length-1; i > -1; i--){
+                    targetElement.removeChild(targetElement.children[i]);
+                }
+            }
+        }
+
+        const init = () => {
+            const getVerbsBtn = document.querySelector("#get-verbs");
+            getVerbsBtn.addEventListener("click", () => {fetchRequest(getVerbsBtn)});
+
+            const getNounsBtn = document.querySelector("#get-nouns");
+            getNounsBtn.addEventListener("click", () => {fetchRequest(getNounsBtn)});
+
+            const getAdjectivesBtn = document.querySelector("#get-adjectives");
+            getAdjectivesBtn.addEventListener("click", () => {fetchRequest(getAdjectivesBtn)});
+
+            const getAdverbsBtn = document.querySelector("#get-adverbs");
+            getAdverbsBtn.addEventListener("click", () => {fetchRequest(getAdverbsBtn)});
+
+        };
+
+        window.onload = init;
+    </script>
+</head>
+<body>
+    <h1>Appunti Italiani</h1>
+    <button id="get-verbs" value="/verbs">GET Verbs</button>
+    <button id="get-nouns" value="/nouns">GET Nouns</button>
+    <button id="get-adjectives" value="/adjectives">GET Adjectives</button>
+    <button id="get-adverbs" value="/adverbs">GET Adverbs</button>
+
+    <div id="content">
+
+    </div>
+</body>
+</html>

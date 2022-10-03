@@ -3,14 +3,18 @@ const url = require('url');
 // const query = require('querystring');
 
 const jsonHandler = require('./jsonResponses.js');
+const htmlHandler = require('./htmlResponses.js');
 
 const port = process.env.PORT || process.env.NODE_PORT || 3000;
 
+// Route GET requests
 const handleGET = (request, response, parsedURL) => {
   switch (parsedURL.pathname) {
     case '/':
+      htmlHandler.getClient(request, response);
       break;
     case '/clientStyle.css':
+      htmlHandler.getStyle(request, response);
       break;
     case '/verbs':
       jsonHandler.getVerbJSON(request, response);
@@ -30,6 +34,7 @@ const handleGET = (request, response, parsedURL) => {
   }
 };
 
+// Route HEAD requests
 const handleHEAD = (request, response, parsedURL) => {
   switch (parsedURL.pathname) {
     case '/verbs':
@@ -44,7 +49,7 @@ const handleHEAD = (request, response, parsedURL) => {
   }
 };
 
-// Route requests depending on therir
+// Route requests depending on their request type.
 const onRequest = (request, response) => {
   const parsedURL = url.parse(request.url);
 

@@ -1,398 +1,497 @@
 [
     {
         "word": "la parte",
-        "definition": "part"
+        "definition": "part",
+        "type": "noun"
     },
     {
         "word": "il tempo",
-        "definition": "time"
+        "definition": "time",
+        "type": "noun"
     },
     {
         "word": "l'anno",
-        "definition": "year"
+        "definition": "year",
+        "type": "noun"
     },
     {
         "word": "il modo",
-        "definition": "way"
+        "definition": "way",
+        "type": "noun"
     },
     {
         "word": "la vita",
-        "definition": "life"
+        "definition": "life",
+        "type": "noun"
     },
     {
         "word": "il caso",
-        "definition": "case"
+        "definition": "case",
+        "type": "noun"
     },
     {
         "word": "la Roma",
-        "definition": "Rome"
+        "definition": "Rome",
+        "type": "noun"
     },
     {
         "word": "l'Italia",
-        "definition": "Italy"
+        "definition": "Italy",
+        "type": "noun"
     },
     {
         "word": "il lavoro",
-        "definition": "work"
+        "definition": "work",
+        "type": "noun"
     },
     {
         "word": "il punto",
-        "definition": "point"
+        "definition": "point",
+        "type": "noun"
     },
     {
         "word": "la volta",
-        "definition": "time/occurence"
+        "definition": "time/occurence",
+        "type": "noun"
     },
     {
         "word": "la cosa",
-        "definition": "thing"
+        "definition": "thing",
+        "type": "noun"
     },
     {
         "word": "il mondo",
-        "definition": "world"
+        "definition": "world",
+        "type": "noun"
     },
     {
         "word": "la citta'",
-        "definition": "city"
+        "definition": "city",
+        "type": "noun"
     },
     {
         "word": "il Milano",
-        "definition": "Milan"
+        "definition": "Milan",
+        "type": "noun"
     },
     {
         "word": "la forma",
-        "definition": "shape"
+        "definition": "shape",
+        "type": "noun"
     },
     {
         "word": "il fine",
-        "definition": "end"
+        "definition": "end",
+        "type": "noun"
     },
     {
         "word": "il luogo",
-        "definition": "place"
+        "definition": "place",
+        "type": "noun"
     },
     {
         "word": "la guerra",
-        "definition": "war"
+        "definition": "war",
+        "type": "noun"
     },
     {
         "word": "la nutura",
-        "definition": "nature"
+        "definition": "nature",
+        "type": "noun"
     },
     {
         "word": "il momento",
-        "definition": "moment"
+        "definition": "moment",
+        "type": "noun"
     },
     {
         "word": "la studentessa",
-        "definition": "student (female)"
+        "definition": "student (female)",
+        "type": "noun"
     },
     {
         "word": "lo studente",
-        "definition": "student (male)"
+        "definition": "student (male)",
+        "type": "noun"
     },
     {
         "word": "l'esempio",
-        "definition": "example"
+        "definition": "example",
+        "type": "noun"
     },
     {
         "word": "l'opera",
-        "definition": "opera"
+        "definition": "opera",
+        "type": "noun"
     },
     {
         "word": "il giorno",
-        "definition": "day"
+        "definition": "day",
+        "type": "noun"
     },
     {
         "word": "la base",
-        "definition": "base"
+        "definition": "base",
+        "type": "noun"
     },
     {
         "word": "il numero",
-        "definition": "number"
+        "definition": "number",
+        "type": "noun"
     },
     {
         "word": "la via",
-        "definition": "street"
+        "definition": "street",
+        "type": "noun"
     },
     {
         "word": "il nome",
-        "definition": "name"
+        "definition": "name",
+        "type": "noun"
     },
     {
         "word": "l'uomo",
-        "definition": "man"
+        "definition": "man",
+        "type": "noun"
     },
     {
         "word": "la donna",
-        "definition": "woman"
+        "definition": "woman",
+        "type": "noun"
     },
     {
         "word": "il ragazzo",
-        "definition": "boy"
+        "definition": "boy",
+        "type": "noun"
     },
     {
         "word": "la ragazza",
-        "definition": "girl"
+        "definition": "girl",
+        "type": "noun"
     },
     {
         "word": "il rapporto",
-        "definition": "rapport; relationship"
+        "definition": "rapport; relationship",
+        "type": "noun"
     },
     {
         "word": "il valore",
-        "definition": "value"
+        "definition": "value",
+        "type": "noun"
     },
     {
         "word": "l'attivita'",
-        "definition": "activity"
+        "definition": "activity",
+        "type": "noun"
     },
     {
         "word": "la realta'",
-        "definition": "reality"
+        "definition": "reality",
+        "type": "noun"
     },
     {
         "word": "il problema",
-        "definition": "problem"
+        "definition": "problem",
+        "type": "noun"
     },
     {
         "word": "il periodo",
-        "definition": "period"
+        "definition": "period",
+        "type": "noun"
     },
     {
         "word": "il mezzo",
-        "definition": "middle"
+        "definition": "middle",
+        "type": "noun"
     },
     {
         "word": "la cura",
-        "definition": "care"
+        "definition": "care",
+        "type": "noun"
     },
     {
         "word": "l'ordine",
-        "definition": "order"
+        "definition": "order",
+        "type": "noun"
     },
     {
         "word": "il principio",
-        "definition": "principle; beginning"
+        "definition": "principle; beginning",
+        "type": "noun"
     },
     {
         "word": "la casa",
-        "definition": "house; home"
+        "definition": "house; home",
+        "type": "noun"
     },
     {
         "word": "la parola",
-        "definition": "word"
+        "definition": "word",
+        "type": "noun"
     },
     {
         "word": "il tipo",
-        "definition": "type"
+        "definition": "type",
+        "type": "noun"
     },
     {
         "word": "il carattere",
-        "definition": "character"
+        "definition": "character",
+        "type": "noun"
     },
     {
         "word": "il governo",
-        "definition": "government"
+        "definition": "government",
+        "type": "noun"
     },
     {
         "word": "la causa",
-        "definition": "cause"
+        "definition": "cause",
+        "type": "noun"
     },
     {
         "word": "la Firenze",
-        "definition": "Florence"
+        "definition": "Florence",
+        "type": "noun"
     },
     {
         "word": "la liberta'",
-        "definition": "freedom"
+        "definition": "freedom",
+        "type": "noun"
     },
     {
         "word": "la politica",
-        "definition": "politics"
+        "definition": "politics",
+        "type": "noun"
     },
     {
         "word": "il processo",
-        "definition": "process"
+        "definition": "process",
+        "type": "noun"
     },
     {
         "word": "la mano",
-        "definition": "hand"
+        "definition": "hand",
+        "type": "noun"
     },
     {
         "word": "il pensiero",
-        "definition": "thought"
+        "definition": "thought",
+        "type": "noun"
     },
     {
         "word": "il piano",
-        "definition": "floor; level"
+        "definition": "floor; level",
+        "type": "noun"
     },
     {
         "word": "il conto",
-        "definition": "count; bill"
+        "definition": "count; bill",
+        "type": "noun"
     },
     {
         "word": "la domanda",
-        "definition": "question"
+        "definition": "question",
+        "type": "noun"
     },
     {
         "word": "l'azione",
-        "definition": "action"
+        "definition": "action",
+        "type": "noun"
     },
     {
         "word": "il fronte",
-        "definition": "front"
+        "definition": "front",
+        "type": "noun"
     },
     {
         "word": "l'elemento",
-        "definition": "element"
+        "definition": "element",
+        "type": "noun"
     },
     {
         "word": "la terra",
-        "definition": "earth"
+        "definition": "earth",
+        "type": "noun"
     },
     {
         "word": "la produzione",
-        "definition": "production"
+        "definition": "production",
+        "type": "noun"
     },
     {
         "word": "La Napoli",
-        "definition": "Naples"
+        "definition": "Naples",
+        "type": "noun"
     },
     {
         "word": "il campo",
-        "definition": "field"
+        "definition": "field",
+        "type": "noun"
     },
     {
         "word": "la ricerca",
-        "definition": "search"
+        "definition": "search",
+        "type": "noun"
     },
     {
         "word": "la relazione",
-        "definition": "relationship"
+        "definition": "relationship",
+        "type": "noun"
     },
     {
         "word": "il paese",
-        "definition": "country"
+        "definition": "country",
+        "type": "noun"
     },
     {
         "word": "il Torino",
-        "definition": "Turin"
+        "definition": "Turin",
+        "type": "noun"
     },
     {
         "word": "il corpo",
-        "definition": "body"
+        "definition": "body",
+        "type": "noun"
     },
     {
         "word": "la presenza",
-        "definition": "presence"
+        "definition": "presence",
+        "type": "noun"
     },
     {
         "word": "il libro",
-        "definition": "book"
+        "definition": "book",
+        "type": "noun"
     },
     {
         "word": "l'atto",
-        "definition": "act"
+        "definition": "act",
+        "type": "noun"
     },
     {
         "word": "la famiglia",
-        "definition": "family"
+        "definition": "family",
+        "type": "noun"
     },
     {
         "word": "il testo",
-        "definition": "text"
+        "definition": "text",
+        "type": "noun"
     },
     {
         "word": "la possibilita'",
-        "definition": "possibility"
+        "definition": "possibility",
+        "type": "noun"
     },
     {
         "word": "il fondo",
-        "definition": "bottom"
+        "definition": "bottom",
+        "type": "noun"
     },
     {
         "word": "la persona",
-        "definition": "person"
+        "definition": "person",
+        "type": "noun"
     },
     {
         "word": "la materia",
-        "definition": "material"
+        "definition": "material",
+        "type": "noun"
     },
     {
         "word": "il corso",
-        "definition": "course"
+        "definition": "course",
+        "type": "noun"
     },
     {
         "word": "il grado",
-        "definition": "degree"
+        "definition": "degree",
+        "type": "noun"
     },
     {
         "word": "la luce",
-        "definition": "light"
+        "definition": "light",
+        "type": "noun"
     },
     {
         "word": "il termine",
-        "definition": "la vista"
+        "definition": "la vista",
+        "type": "noun"
     },
     {
         "word": "la vista",
-        "definition": "view"
+        "definition": "view",
+        "type": "noun"
     },
     {
         "word": "la cultura",
-        "definition": "culture"
+        "definition": "culture",
+        "type": "noun"
     },
     {
         "word": "la necessita'",
-        "definition": "need"
+        "definition": "need",
+        "type": "noun"
     },
     {
         "word": "la gente",
-        "definition": "people"
+        "definition": "people",
+        "type": "noun"
     },
     {
         "word": "la chiesa",
-        "definition": "church"
+        "definition": "church",
+        "type": "noun"
     },
     {
         "word": "la funzione",
-        "definition": "function"
+        "definition": "function",
+        "type": "noun"
     },
     {
         "word": "il titolo",
-        "definition": "title"
+        "definition": "title",
+        "type": "noun"
     },
     {
         "word": "l'uso",
-        "definition": "use"
+        "definition": "use",
+        "type": "noun"
     },
     {
         "word": "il gruppo",
-        "definition": "group"
+        "definition": "group",
+        "type": "noun"
     },
     {
         "word": "il giudizio",
-        "definition": "opinion"
+        "definition": "opinion",
+        "type": "noun"
     },
     {
         "word": "il re",
-        "definition": "king"
+        "definition": "king",
+        "type": "noun"
     },
     {
         "word": "la regina",
-        "definition": "queen"
+        "definition": "queen",
+        "type": "noun"
     },
     {
         "word": "la lettera",
-        "definition": "letter"
+        "definition": "letter",
+        "type": "noun"
     },
     {
         "word": "il consiglio",
-        "definition": "advice"
+        "definition": "advice",
+        "type": "noun"
     },
     {
         "word": "l'interesse",
-        "definition": "interest"
+        "definition": "interest",
+        "type": "noun"
     }
 ]

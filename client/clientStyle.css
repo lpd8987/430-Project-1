@@ -1,0 +1,50 @@
+#content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.data-entry{
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 5px 10px #888888;
+}
+
+.data-entry:hover {
+    border: 3px solid black;
+    box-shadow: 2px 5px #888888;
+    animation: mouseOver;
+    animation-duration: 0.3s;
+}
+
+
+
+/*Desktop*/
+@media only screen and (min-width: 1024px) {
+    .data-entry{
+        width: 25vw;
+    }
+}
+
+/*Mobile*/
+@media only screen and (max-width: 1024px) {
+    .data-entry{
+        width: 100vw;
+    }
+}
+
+@keyframes mouseOver {
+    0%   {
+            box-shadow: 5px 10px #888888;
+            border: 1px solid black;
+        }
+    100% {
+            box-shadow: 2px 5px #888888;
+            border: 3px solid black;
+        }
+}

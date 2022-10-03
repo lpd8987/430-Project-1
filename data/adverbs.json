@@ -1,374 +1,467 @@
 [
     {
         "word": "non",
-        "definition": "not"
+        "definition": "not",
+        "type": "adverb"
     },
     {
         "word": "piu'",
-        "definition": "more"
+        "definition": "more",
+        "type": "adverb"
     },
     {
         "word": "gia'",
-        "definition": "already"
+        "definition": "already",
+        "type": "adverb"
     },
     {
         "word": "cosi'",
-        "definition": "so"
+        "definition": "so",
+        "type": "adverb"
     },
     {
         "word": "poi",
-        "definition": "then"
+        "definition": "then",
+        "type": "adverb"
     },
     {
         "word": "ancora",
-        "definition": "still"
+        "definition": "still",
+        "type": "adverb"
     },
     {
         "word": "quanto",
-        "definition": "how much"
+        "definition": "how much",
+        "type": "adverb"
     },
     {
         "word": "qui",
-        "definition": "here"
+        "definition": "here",
+        "type": "adverb"
     },
     {
         "word": "molto",
-        "definition": "very"
+        "definition": "very",
+        "type": "adverb"
     },
     {
         "word": "meno",
-        "definition": "less"
+        "definition": "less",
+        "type": "adverb"
     },
     {
         "word": "dove",
-        "definition": "where"
+        "definition": "where",
+        "type": "adverb"
     },
     {
         "word": "cioe'",
-        "definition": "namely"
+        "definition": "namely",
+        "type": "adverb"
     },
     {
         "word": "prima",
-        "definition": "before"
+        "definition": "before",
+        "type": "adverb"
     },
     {
         "word": "dopo",
-        "definition": "after"
+        "definition": "after",
+        "type": "adverb"
     },
     {
         "word": "quasi",
-        "definition": "almost"
+        "definition": "almost",
+        "type": "adverb"
     },
     {
         "word": "invece",
-        "definition": "instead"
+        "definition": "instead",
+        "type": "adverb"
     },
     {
         "word": "mai",
-        "definition": "never"
+        "definition": "never",
+        "type": "adverb"
     },
     {
         "word": "tanto",
-        "definition": "a lot of"
+        "definition": "a lot of",
+        "type": "adverb"
     },
     {
         "word": "come",
-        "definition": "as"
+        "definition": "as",
+        "type": "adverb"
     },
     {
         "word": "bene",
-        "definition": "well"
+        "definition": "well",
+        "type": "adverb"
     },
     {
         "word": "ora",
-        "definition": "now"
+        "definition": "now",
+        "type": "adverb"
     },
     {
         "word": "ci",
-        "definition": "there"
+        "definition": "there",
+        "type": "adverb"
     },
     {
         "word": "poco",
-        "definition": "little"
+        "definition": "little",
+        "type": "adverb"
     },
     {
         "word": "forse",
-        "definition": "perhaps"
+        "definition": "perhaps",
+        "type": "adverb"
     },
     {
         "word": "proprio",
-        "definition": "exactly"
+        "definition": "exactly",
+        "type": "adverb"
     },
     {
         "word": "pure",
-        "definition": "as well"
+        "definition": "as well",
+        "type": "adverb"
     },
     {
         "word": "oggi",
-        "definition": "today"
+        "definition": "today",
+        "type": "adverb"
     },
     {
         "word": "almeno",
-        "definition": "at least"
+        "definition": "at least",
+        "type": "adverb"
     },
     {
         "word": "circa",
-        "definition": "about"
+        "definition": "about",
+        "type": "adverb"
     },
     {
         "word": "troppo",
-        "definition": "too much"
+        "definition": "too much",
+        "type": "adverb"
     },
     {
         "word": "insieme",
-        "definition": "together"
+        "definition": "together",
+        "type": "adverb"
     },
     {
         "word": "oltre",
-        "definition": "further"
+        "definition": "further",
+        "type": "adverb"
     },
     {
         "word": "certo",
-        "definition": "of course"
+        "definition": "of course",
+        "type": "adverb"
     },
     {
         "word": "fuori",
-        "definition": "outside"
+        "definition": "outside",
+        "type": "adverb"
     },
     {
         "word": "meglio",
-        "definition": "better"
+        "definition": "better",
+        "type": "adverb"
     },
     {
         "word": "appunto",
-        "definition": "exactly"
+        "definition": "exactly",
+        "type": "adverb"
     },
     {
         "word": "piuttosto",
-        "definition": "rather"
+        "definition": "rather",
+        "type": "adverb"
     },
     {
         "word": "ormai",
-        "definition": "by now"
+        "definition": "by now",
+        "type": "adverb"
     },
     {
         "word": "inoltre",
-        "definition": "furthermore"
+        "definition": "furthermore",
+        "type": "adverb"
     },
     {
         "word": "appena",
-        "definition": "as soon as"
+        "definition": "as soon as",
+        "type": "adverb"
     },
     {
         "word": "infine",
-        "definition": "finally"
+        "definition": "finally",
+        "type": "adverb"
     },
     {
         "word": "intorno",
-        "definition": "around"
+        "definition": "around",
+        "type": "adverb"
     },
     {
         "word": "quindi",
-        "definition": "so, then"
+        "definition": "so, then",
+        "type": "adverb"
     },
     {
         "word": "direttamente",
-        "definition": "directly"
+        "definition": "directly",
+        "type": "adverb"
     },
     {
         "word": "veramente",
-        "definition": "really"
+        "definition": "really",
+        "type": "adverb"
     },
     {
         "word": "certamente",
-        "definition": "certainly"
+        "definition": "certainly",
+        "type": "adverb"
     },
     {
         "word": "comunque",
-        "definition": "anyway"
+        "definition": "anyway",
+        "type": "adverb"
     },
     {
         "word": "particolarmente",
-        "definition": "particularly"
+        "definition": "particularly",
+        "type": "adverb"
     },
     {
         "word": "avanti",
-        "definition": "forward"
+        "definition": "forward",
+        "type": "adverb"
     },
     {
         "word": "allora",
-        "definition": "then"
+        "definition": "then",
+        "type": "adverb"
     },
     {
         "word": "probabilmente",
-        "definition": "probably"
+        "definition": "probably",
+        "type": "adverb"
     },
     {
         "word": "via",
-        "definition": "away"
+        "definition": "away",
+        "type": "adverb"
     },
     {
         "word": "presto",
-        "definition": "soon"
+        "definition": "soon",
+        "type": "adverb"
     },
     {
         "word": "abbastanza",
-        "definition": "enough"
+        "definition": "enough",
+        "type": "adverb"
     },
     {
         "word": "all'interno",
-        "definition": "indoors"
+        "definition": "indoors",
+        "type": "adverb"
     },
     {
         "word": "tardi",
-        "definition": "late"
+        "definition": "late",
+        "type": "adverb"
     },
     {
         "word": "facilmente",
-        "definition": "easily"
+        "definition": "easily",
+        "type": "adverb"
     },
     {
         "word": "vicino",
-        "definition": "close"
+        "definition": "close",
+        "type": "adverb"
     },
     {
         "word": "fa",
-        "definition": "ago"
+        "definition": "ago",
+        "type": "adverb"
     },
     {
         "word": "addirittura",
-        "definition": "even"
+        "definition": "even",
+        "type": "adverb"
     },
     {
         "word": "naturalmente",
-        "definition": "naturally, of course"
+        "definition": "naturally, of course",
+        "type": "adverb"
     },
     {
         "word": "affatto",
-        "definition": "at all"
+        "definition": "at all",
+        "type": "adverb"
     },
     {
         "word": "la'",
-        "definition": "tutto"
+        "definition": "tutto",
+        "type": "adverb"
     },
     {
         "word": "completamente",
-        "definition": "completely"
+        "definition": "completely",
+        "type": "adverb"
     },
     {
         "word": "finalmente",
-        "definition": "finally"
+        "definition": "finally",
+        "type": "adverb"
     },
     {
         "word": "immediatamente",
-        "definition": "immediately"
+        "definition": "immediately",
+        "type": "adverb"
     },
     {
         "word": "esclusivamente",
-        "definition": "exclusively"
+        "definition": "exclusively",
+        "type": "adverb"
     },
     {
         "word": "pertanto",
-        "definition": "therefore"
+        "definition": "therefore",
+        "type": "adverb"
     },
     {
         "word": "quando",
-        "definition": "when"
+        "definition": "when",
+        "type": "adverb"
     },
     {
         "word": "chiaramente",
-        "definition": "clearly"
+        "definition": "clearly",
+        "type": "adverb"
     },
     {
         "word": "nemmeno",
-        "definition": "not even"
+        "definition": "not even",
+        "type": "adverb"
     },
     {
         "word": "ecco",
-        "definition": "here"
+        "definition": "here",
+        "type": "adverb"
     },
     {
         "word": "assolutamente",
-        "definition": "absolutely"
+        "definition": "absolutely",
+        "type": "adverb"
     },
     {
         "word": "peraltro",
-        "definition": "moreover"
+        "definition": "moreover",
+        "type": "adverb"
     },
     {
         "word": "male",
-        "definition": "badly"
+        "definition": "badly",
+        "type": "adverb"
     },
     {
         "word": "necessariamente",
-        "definition": "necessarily"
+        "definition": "necessarily",
+        "type": "adverb"
     },
     {
         "word": "accanto",
-        "definition": "near"
+        "definition": "near",
+        "type": "adverb"
     },
     {
         "word": "altresi'",
-        "definition": "generalmente"
+        "definition": "generalmente",
+        "type": "adverb"
     },
     {
         "word": "davvero",
-        "definition": "truly"
+        "definition": "truly",
+        "type": "adverb"
     },
     {
         "word": "dietro",
-        "definition": "behind"
+        "definition": "behind",
+        "type": "adverb"
     },
     {
         "word": "rispettivamente",
-        "definition": "respectively"
+        "definition": "respectively",
+        "type": "adverb"
     },
     {
         "word": "insomma",
-        "definition": "in short"
+        "definition": "in short",
+        "type": "adverb"
     },
     {
         "word": "adesso",
-        "definition": "now"
+        "definition": "now",
+        "type": "adverb"
     },
     {
         "word": "evidentemente",
-        "definition": "apparently"
+        "definition": "apparently",
+        "type": "adverb"
     },
     {
         "word": "perfettamente",
-        "definition": "perfectly"
+        "definition": "perfectly",
+        "type": "adverb"
     },
     {
         "word": "altrimenti",
-        "definition": "otherwise"
+        "definition": "otherwise",
+        "type": "adverb"
     },
     {
         "word": "principalmente",
-        "definition": "mainly"
+        "definition": "mainly",
+        "type": "adverb"
     },
     {
         "word": "innanzi",
-        "definition": "forward"
+        "definition": "forward",
+        "type": "adverb"
     },
     {
         "word": "altrove",
-        "definition": "elsewhere"
+        "definition": "elsewhere",
+        "type": "adverb"
     },
     {
         "word": "davanti",
-        "definition": "in front"
+        "definition": "in front",
+        "type": "adverb"
     },
     {
         "word": "dentro",
-        "definition": "inside"
+        "definition": "inside",
+        "type": "adverb"
     },
     {
         "word": "intanto",
-        "definition": "in the meantime"
+        "definition": "in the meantime",
+        "type": "adverb"
     },
     {
         "word": "essenzialmente",
-        "definition": "essentially"
+        "definition": "essentially",
+        "type": "adverb"
     }
 ]

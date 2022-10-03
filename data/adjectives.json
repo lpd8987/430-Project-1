@@ -1,342 +1,427 @@
 [
     {
         "word": "altro",
-        "definition": "other"
+        "definition": "other",
+        "type": "adjective"
     },
     {
         "word": "primo",
-        "definition": "first"
+        "definition": "first",
+        "type": "adjective"
     },
     {
         "word": "grande",
-        "definition": "big"
+        "definition": "big",
+        "type": "adjective"
     },
     {
         "word": "diritto",
-        "definition": "straight"
+        "definition": "straight",
+        "type": "adjective"
     },
     {
         "word": "nuovo",
-        "definition": "new"
+        "definition": "new",
+        "type": "adjective"
     },
     {
         "word": "possibile",
-        "definition": "possible"
+        "definition": "possible",
+        "type": "adjective"
     },
     {
         "word": "generale",
-        "definition": "general"
+        "definition": "general",
+        "type": "adjective"
     },
     {
         "word": "vero",
-        "definition": "true"
+        "definition": "true",
+        "type": "adjective"
     },
     {
         "word": "italiano",
-        "definition": "italian"
+        "definition": "italian",
+        "type": "adjective"
     },
     {
         "word": "politico",
-        "definition": "political"
+        "definition": "political",
+        "type": "adjective"
     },
     {
         "word": "maggiore",
-        "definition": "greater"
+        "definition": "greater",
+        "type": "adjective"
     },
     {
         "word": "nazionale",
-        "definition": "national"
+        "definition": "national",
+        "type": "adjective"
     },
     {
         "word": "civile",
-        "definition": "civil"
+        "definition": "civil",
+        "type": "adjective"
     },
     {
         "word": "necessario",
-        "definition": "necessary"
+        "definition": "necessary",
+        "type": "adjective"
     },
     {
         "word": "lungo",
-        "definition": "long"
+        "definition": "long",
+        "type": "adjective"
     },
     {
         "word": "pubblico",
-        "definition": "public"
+        "definition": "public",
+        "type": "adjective"
     },
     {
         "word": "comune",
-        "definition": "common"
+        "definition": "common",
+        "type": "adjective"
     },
     {
         "word": "forte",
-        "definition": "strong"
+        "definition": "strong",
+        "type": "adjective"
     },
     {
         "word": "importante",
-        "definition": "important"
+        "definition": "important",
+        "type": "adjective"
     },
     {
         "word": "buono",
-        "definition": "good"
+        "definition": "good",
+        "type": "adjective"
     },
     {
         "word": "naturale",
-        "definition": "natural"
+        "definition": "natural",
+        "type": "adjective"
     },
     {
         "word": "breve",
-        "definition": "short"
+        "definition": "short",
+        "type": "adjective"
     },
     {
         "word": "particolare",
-        "definition": "particular"
+        "definition": "particular",
+        "type": "adjective"
     },
     {
         "word": "economico",
-        "definition": "economic"
+        "definition": "economic",
+        "type": "adjective"
     },
     {
         "word": "ultimo",
-        "definition": "last"
+        "definition": "last",
+        "type": "adjective"
     },
     {
         "word": "morale",
-        "definition": "moral"
+        "definition": "moral",
+        "type": "adjective"
     },
     {
         "word": "difficile",
-        "definition": "difficult"
+        "definition": "difficult",
+        "type": "adjective"
     },
     {
         "word": "unico",
-        "definition": "only"
+        "definition": "only",
+        "type": "adjective"
     },
     {
         "word": "internazionale",
-        "definition": "international"
+        "definition": "international",
+        "type": "adjective"
     },
     {
         "word": "evidente",
-        "definition": "obvious"
+        "definition": "obvious",
+        "type": "adjective"
     },
     {
         "word": "diverso",
-        "definition": "different"
+        "definition": "different",
+        "type": "adjective"
     },
     {
         "word": "culturale",
-        "definition": "cultural"
+        "definition": "cultural",
+        "type": "adjective"
     },
     {
         "word": "centrale",
-        "definition": "central"
+        "definition": "central",
+        "type": "adjective"
     },
     {
         "word": "facile",
-        "definition": "easy"
+        "definition": "easy",
+        "type": "adjective"
     },
     {
         "word": "reale",
-        "definition": "real"
+        "definition": "real",
+        "type": "adjective"
     },
     {
         "word": "principale",
-        "definition": "main"
+        "definition": "main",
+        "type": "adjective"
     },
     {
         "word": "precedente",
-        "definition": "previous"
+        "definition": "previous",
+        "type": "adjective"
     },
     {
         "word": "militare",
-        "definition": "military"
+        "definition": "military",
+        "type": "adjective"
     },
     {
         "word": "utile",
-        "definition": "useful"
+        "definition": "useful",
+        "type": "adjective"
     },
     {
         "word": "personale",
-        "definition": "personal"
+        "definition": "personal",
+        "type": "adjective"
     },
     {
         "word": "piccolo",
-        "definition": "small"
+        "definition": "small",
+        "type": "adjective"
     },
     {
         "word": "chiaro",
-        "definition": "clear"
+        "definition": "clear",
+        "type": "adjective"
     },
     {
         "word": "grave",
-        "definition": "serious"
+        "definition": "serious",
+        "type": "adjective"
     },
     {
         "word": "fondamentale",
-        "definition": "fundamental"
+        "definition": "fundamental",
+        "type": "adjective"
     },
     {
         "word": "attuale",
-        "definition": "current"
+        "definition": "current",
+        "type": "adjective"
     },
     {
         "word": "notevole",
-        "definition": "remarkable"
+        "definition": "remarkable",
+        "type": "adjective"
     },
     {
         "word": "pieno",
-        "definition": "full"
+        "definition": "full",
+        "type": "adjective"
     },
     {
         "word": "moderno",
-        "definition": "modern"
+        "definition": "modern",
+        "type": "adjective"
     },
     {
         "word": "inferiore",
-        "definition": "lower"
+        "definition": "lower",
+        "type": "adjective"
     },
     {
         "word": "relativo",
-        "definition": "relative"
+        "definition": "relative",
+        "type": "adjective"
     },
     {
         "word": "antico",
-        "definition": "ancient"
+        "definition": "ancient",
+        "type": "adjective"
     },
     {
         "word": "alto",
-        "definition": "high"
+        "definition": "high",
+        "type": "adjective"
     },
     {
         "word": "massimo",
-        "definition": "greatest"
+        "definition": "greatest",
+        "type": "adjective"
     },
     {
         "word": "popolare",
-        "definition": "popular"
+        "definition": "popular",
+        "type": "adjective"
     },
     {
         "word": "totale",
-        "definition": "total"
+        "definition": "total",
+        "type": "adjective"
     },
     {
         "word": "locale",
-        "definition": "local"
+        "definition": "local",
+        "type": "adjective"
     },
     {
         "word": "libero",
-        "definition": "free"
+        "definition": "free",
+        "type": "adjective"
     },
     {
         "word": "bello",
-        "definition": "beautiful"
+        "definition": "beautiful",
+        "type": "adjective"
     },
     {
         "word": "industriale",
-        "definition": "industrial"
+        "definition": "industrial",
+        "type": "adjective"
     },
     {
         "word": "costituzionale",
-        "definition": "constitutional"
+        "definition": "constitutional",
+        "type": "adjective"
     },
     {
         "word": "medio",
-        "definition": "average"
+        "definition": "average",
+        "type": "adjective"
     },
     {
         "word": "penale",
-        "definition": "criminal"
+        "definition": "criminal",
+        "type": "adjective"
     },
     {
         "word": "proprio",
-        "definition": "own"
+        "definition": "own",
+        "type": "adjective"
     },
     {
         "word": "numeroso",
-        "definition": "numerous"
+        "definition": "numerous",
+        "type": "adjective"
     },
     {
         "word": "giuridico",
-        "definition": "legal"
+        "definition": "legal",
+        "type": "adjective"
     },
     {
         "word": "interno",
-        "definition": "internal"
+        "definition": "internal",
+        "type": "adjective"
     },
     {
         "word": "universale",
-        "definition": "universal"
+        "definition": "universal",
+        "type": "adjective"
     },
     {
         "word": "recente",
-        "definition": "recent"
+        "definition": "recent",
+        "type": "adjective"
     },
     {
         "word": "giovane",
-        "definition": "young"
+        "definition": "young",
+        "type": "adjective"
     },
     {
         "word": "impossibile",
-        "definition": "impossible"
+        "definition": "impossible",
+        "type": "adjective"
     },
     {
         "word": "interessante",
-        "definition": "interesting"
+        "definition": "interesting",
+        "type": "adjective"
     },
     {
         "word": "opportuno",
-        "definition": "appropriate"
+        "definition": "appropriate",
+        "type": "adjective"
     },
     {
         "word": "regionale",
-        "definition": "regional"
+        "definition": "regional",
+        "type": "adjective"
     },
     {
         "word": "capace",
-        "definition": "capable"
+        "definition": "capable",
+        "type": "adjective"
     },
     {
         "word": "essenziale",
-        "definition": "essential"
+        "definition": "essential",
+        "type": "adjective"
     },
     {
         "word": "vecchio",
-        "definition": "old"
+        "definition": "old",
+        "type": "adjective"
     },
     {
         "word": "migliore",
-        "definition": "best"
+        "definition": "best",
+        "type": "adjective"
     },
     {
         "word": "commerciale",
-        "definition": "commercial"
+        "definition": "commercial",
+        "type": "adjective"
     },
     {
         "word": "globale",
-        "definition": "global"
+        "definition": "global",
+        "type": "adjective"
     },
     {
         "word": "minore",
-        "definition": "smaller"
+        "definition": "smaller",
+        "type": "adjective"
     },
     {
         "word": "originale",
-        "definition": "original"
+        "definition": "original",
+        "type": "adjective"
     },
     {
         "word": "tradizionale",
-        "definition": "traditional"
+        "definition": "traditional",
+        "type": "adjective"
     },
     {
         "word": "ufficiale",
-        "definition": "official"
+        "definition": "official",
+        "type": "adjective"
     },
     {
         "word": "individuale",
-        "definition": "individual"
+        "definition": "individual",
+        "type": "adjective"
     },
     {
         "word": "giusto",
-        "definition": "fair"
+        "definition": "fair",
+        "type": "adjective"
     }
 ]

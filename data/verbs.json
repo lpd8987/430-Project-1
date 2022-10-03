@@ -1,526 +1,657 @@
 [
     {
         "word": "consentire",
-        "definition": "to allow"
+        "definition": "to allow",
+        "type": "verb"
     },
     {
         "word": "infastidire",
-        "definition": "to annoy"
+        "definition": "to annoy",
+        "type": "verb"
     },
     {
         "word": "scusarsi",
-        "definition": "to excuse oneself"
+        "definition": "to excuse oneself",
+        "type": "verb"
     },
     {
         "word": "appellare",
-        "definition": "to appeal"
+        "definition": "to appeal",
+        "type": "verb"
     },
     {
         "word": "apparire",
-        "definition": "to appear"
+        "definition": "to appear",
+        "type": "verb"
     },
     {
         "word": "discutere",
-        "definition": "to argue"
+        "definition": "to argue",
+        "type": "verb"
     },
     {
         "word": "arrivare",
-        "definition": "to arrive"
+        "definition": "to arrive",
+        "type": "verb"
     },
     {
         "word": "chiedere",
-        "definition": "to ask"
+        "definition": "to ask",
+        "type": "verb"
     },
     {
         "word": "tentare",
-        "definition": "to attempt"
+        "definition": "to attempt",
+        "type": "verb"
     },
     {
         "word": "attirare",
-        "definition": "to attract"
+        "definition": "to attract",
+        "type": "verb"
     },
     {
         "word": "chiamarsi",
-        "definition": "to call oneself"
+        "definition": "to call oneself",
+        "type": "verb"
     },
     {
         "word": "battere",
-        "definition": "to beat"
+        "definition": "to beat",
+        "type": "verb"
     },
     {
         "word": "diventare",
-        "definition": "to begin"
+        "definition": "to begin",
+        "type": "verb"
     },
     {
         "word": "iniziare",
-        "definition": "to begin"
+        "definition": "to begin",
+        "type": "verb"
     },
     {
         "word": "credere",
-        "definition": "to believe"
+        "definition": "to believe",
+        "type": "verb"
     },
     {
         "word": "rompere",
-        "definition": "to break"
+        "definition": "to break",
+        "type": "verb"
     },
     {
         "word": "portare",
-        "definition": "to bring"
+        "definition": "to bring",
+        "type": "verb"
     },
     {
         "word": "comprare",
-        "definition": "to buy"
+        "definition": "to buy",
+        "type": "verb"
     },
     {
         "word": "potere",
-        "definition": "to be able to"
+        "definition": "to be able to",
+        "type": "verb"
     },
     {
         "word": "catturare",
-        "definition": "to catch"
+        "definition": "to catch",
+        "type": "verb"
     },
     {
         "word": "festeggiare",
-        "definition": "to celebrate"
+        "definition": "to celebrate",
+        "type": "verb"
     },
     {
         "word": "scegliere",
-        "definition": "to choose"
+        "definition": "to choose",
+        "type": "verb"
     },
     {
         "word": "pulire",
-        "definition": "to clean"
+        "definition": "to clean",
+        "type": "verb"
     },
     {
         "word": "chiudere",
-        "definition": "to ask"
+        "definition": "to ask",
+        "type": "verb"
     },
     {
         "word": "venire",
-        "definition": "to come"
+        "definition": "to come",
+        "type": "verb"
     },
     {
         "word": "confrontare",
-        "definition": "to confront"
+        "definition": "to confront",
+        "type": "verb"
     },
     {
         "word": "cucinare",
-        "definition": "to cook"
+        "definition": "to cook",
+        "type": "verb"
     },
     {
         "word": "costare",
-        "definition": "to cook"
+        "definition": "to cost",
+        "type": "verb"
     },
     {
         "word": "contare",
-        "definition": "to count"
+        "definition": "to count",
+        "type": "verb"
     },
     {
         "word": "creare",
-        "definition": "to create"
+        "definition": "to create",
+        "type": "verb"
     },
     {
         "word": "piangere",
-        "definition": "to cry"
+        "definition": "to cry",
+        "type": "verb"
     },
     {
         "word": "tagliare",
-        "definition": "to cut"
+        "definition": "to cut",
+        "type": "verb"
     },
     {
         "word": "decidere",
-        "definition": "to decide"
+        "definition": "to decide",
+        "type": "verb"
     },
     {
         "word": "cancellare",
-        "definition": "to delete"
+        "definition": "to delete",
+        "type": "verb"
     },
     {
         "word": "morire",
-        "definition": "to die"
+        "definition": "to die",
+        "type": "verb"
     },
     {
         "word": "disturbare",
-        "definition": "to disturb"
+        "definition": "to disturb",
+        "type": "verb"
     },
     {
         "word": "fare",
-        "definition": "to make; to do"
+        "definition": "to make; to do",
+        "type": "verb"
     },
     {
         "word": "disegnare",
-        "definition": "to draw"
+        "definition": "to draw",
+        "type": "verb"
     },
     {
         "word": "sognare",
-        "definition": "to dream"
+        "definition": "to dream",
+        "type": "verb"
     },
     {
         "word": "bere",
-        "definition": "to drink"
+        "definition": "to drink",
+        "type": "verb"
     },
     {
         "word": "guidare",
-        "definition": "to drive"
+        "definition": "to drive",
+        "type": "verb"
     },
     {
         "word": "guadagnare",
-        "definition": "to earn"
+        "definition": "to earn",
+        "type": "verb"
     },
     {
         "word": "mangiare",
-        "definition": "to eat"
+        "definition": "to eat",
+        "type": "verb"
     },
     {
         "word": "finire",
-        "definition": "to finish"
+        "definition": "to finish",
+        "type": "verb"
     },
     {
         "word": "entrare",
-        "definition": "to enter"
+        "definition": "to enter",
+        "type": "verb"
     },
     {
         "word": "spiegare",
-        "definition": "to explain"
+        "definition": "to explain",
+        "type": "verb"
     },
     {
         "word": "cadere",
-        "definition": "to fall"
+        "definition": "to fall",
+        "type": "verb"
     },
     {
         "word": "sentire",
-        "definition": "to feel; to hear"
+        "definition": "to feel; to hear",
+        "type": "verb"
     },
     {
         "word": "trovare",
-        "definition": "to search"
+        "definition": "to search",
+        "type": "verb"
     },
     {
         "word": "volare",
-        "definition": "to fly"
+        "definition": "to fly",
+        "type": "verb"
     },
     {
         "word": "seguire",
-        "definition": "to follow"
+        "definition": "to follow",
+        "type": "verb"
     },
     {
         "word": "dimenticare",
-        "definition": "to forget"
+        "definition": "to forget",
+        "type": "verb"
     },
     {
         "word": "ottenere",
-        "definition": "to get"
+        "definition": "to get",
+        "type": "verb"
     },
     {
         "word": "scendere",
-        "definition": "to go down"
+        "definition": "to go down",
+        "type": "verb"
     },
     {
         "word": "conoscere",
-        "definition": "to be familiar with"
+        "definition": "to be familiar with",
+        "type": "verb"
     },
     {
         "word": "dare",
-        "definition": "to give"
+        "definition": "to give",
+        "type": "verb"
     },
     {
         "word": "andare",
-        "definition": "to go"
+        "definition": "to go",
+        "type": "verb"
     },
     {
         "word": "salutare",
-        "definition": "to greet"
+        "definition": "to greet",
+        "type": "verb"
     },
     {
         "word": "crescere",
-        "definition": "to grow"
+        "definition": "to grow",
+        "type": "verb"
     },
     {
         "word": "accadere",
-        "definition": "to happen"
+        "definition": "to happen",
+        "type": "verb"
     },
     {
         "word": "odiare",
-        "definition": "to hate"
+        "definition": "to hate",
+        "type": "verb"
     },
     {
         "word": "avere",
-        "definition": "to have"
+        "definition": "to have",
+        "type": "verb"
     },
     {
         "word": "aiutare",
-        "definition": "to help"
+        "definition": "to help",
+        "type": "verb"
     },
     {
         "word": "nascondere",
-        "definition": "to hide"
+        "definition": "to hide",
+        "type": "verb"
     },
     {
         "word": "tenere",
-        "definition": "to hold"
+        "definition": "to hold",
+        "type": "verb"
     },
     {
         "word": "sperare",
-        "definition": "to hope"
+        "definition": "to hope",
+        "type": "verb"
     },
     {
         "word": "ferire",
-        "definition": "to injure"
+        "definition": "to injure",
+        "type": "verb"
     },
     {
         "word": "informare",
-        "definition": "to inform"
+        "definition": "to inform",
+        "type": "verb"
     },
     {
         "word": "interessare",
-        "definition": "to interest"
+        "definition": "to interest",
+        "type": "verb"
     },
     {
         "word": "presentare",
-        "definition": "to introduce"
+        "definition": "to introduce",
+        "type": "verb"
     },
     {
         "word": "ivitare",
-        "definition": "to invite"
+        "definition": "to invite",
+        "type": "verb"
     },
     {
         "word": "saltare",
-        "definition": "to jump"
+        "definition": "to jump",
+        "type": "verb"
     },
     {
         "word": "baciare",
-        "definition": "to kiss"
+        "definition": "to kiss",
+        "type": "verb"
     },
     {
         "word": "sapere",
-        "definition": "to know"
+        "definition": "to know",
+        "type": "verb"
     },
     {
         "word": "ridere",
-        "definition": "to laugh"
+        "definition": "to laugh",
+        "type": "verb"
     },
     {
         "word": "imparare",
-        "definition": "to learn"
+        "definition": "to learn",
+        "type": "verb"
     },
     {
         "word": "lasciare",
-        "definition": "to let"
+        "definition": "to let",
+        "type": "verb"
     },
     {
         "word": "ascoltare",
-        "definition": "to listen"
+        "definition": "to listen",
+        "type": "verb"
     },
     {
         "word": "vivere",
-        "definition": "to live"
+        "definition": "to live",
+        "type": "verb"
     },
     {
         "word": "guardare",
-        "definition": "to watch"
+        "definition": "to watch",
+        "type": "verb"
     },
     {
         "word": "perdere",
-        "definition": "to lose"
+        "definition": "to lose",
+        "type": "verb"
     },
     {
         "word": "amare",
-        "definition": "to love"
+        "definition": "to love",
+        "type": "verb"
     },
     {
         "word": "postare",
-        "definition": "to mail"
+        "definition": "to mail",
+        "type": "verb"
     },
     {
         "word": "sposare",
-        "definition": "to marry"
+        "definition": "to marry",
+        "type": "verb"
     },
     {
         "word": "significare",
-        "definition": "to mean"
+        "definition": "to mean",
+        "type": "verb"
     },
     {
         "word": "incontrare",
-        "definition": "to meet"
+        "definition": "to meet",
+        "type": "verb"
     },
     {
         "word": "mancare",
-        "definition": "to miss"
+        "definition": "to miss",
+        "type": "verb"
     },
     {
         "word": "muovere",
-        "definition": "to move"
+        "definition": "to move",
+        "type": "verb"
     },
     {
         "word": "dovere",
-        "definition": "to need to, must"
+        "definition": "to need to, must",
+        "type": "verb"
     },
     {
         "word": "offrire",
-        "definition": "to offer"
+        "definition": "to offer",
+        "type": "verb"
     },
     {
         "word": "aprire",
-        "definition": "to open"
+        "definition": "to open",
+        "type": "verb"
     },
     {
         "word": "imballare",
-        "definition": "to pack"
+        "definition": "to pack",
+        "type": "verb"
     },
     {
         "word": "dipingere",
-        "definition": "to paint"
+        "definition": "to paint",
+        "type": "verb"
     },
     {
         "word": "pagare",
-        "definition": "to pay"
+        "definition": "to pay",
+        "type": "verb"
     },
     {
         "word": "telefonare",
-        "definition": "to telephone"
+        "definition": "to telephone",
+        "type": "verb"
     },
     {
         "word": "giocare",
-        "definition": "to play"
+        "definition": "to play",
+        "type": "verb"
     },
     {
         "word": "piacere",
-        "definition": "to please"
+        "definition": "to please",
+        "type": "verb"
     },
     {
         "word": "preparare",
-        "definition": "to prepare"
+        "definition": "to prepare",
+        "type": "verb"
     },
     {
         "word": "stampare",
-        "definition": "to print"
+        "definition": "to print",
+        "type": "verb"
     },
     {
         "word": "tirare",
-        "definition": "to pull"
+        "definition": "to pull",
+        "type": "verb"
     },
     {
         "word": "spingere",
-        "definition": "to push"
+        "definition": "to push",
+        "type": "verb"
     },
     {
         "word": "piovere",
-        "definition": "to rain"
+        "definition": "to rain",
+        "type": "verb"
     },
     {
         "word": "ricevere",
-        "definition": "to receive"
+        "definition": "to receive",
+        "type": "verb"
     },
     {
         "word": "leggere",
-        "definition": "to read"
+        "definition": "to read",
+        "type": "verb"
     },
     {
         "word": "raccomandare",
-        "definition": "to recommend"
+        "definition": "to recommend",
+        "type": "verb"
     },
     {
         "word": "affitare",
-        "definition": "to rent out"
+        "definition": "to rent out",
+        "type": "verb"
     },
     {
         "word": "ripetere",
-        "definition": "to repeat"
+        "definition": "to repeat",
+        "type": "verb"
     },
     {
         "word": "restare",
-        "definition": "to remain"
+        "definition": "to remain",
+        "type": "verb"
     },
     {
         "word": "correre",
-        "definition": "to run"
+        "definition": "to run",
+        "type": "verb"
     },
     {
         "word": "ricercere",
-        "definition": "to research"
+        "definition": "to research",
+        "type": "verb"
     },
     {
         "word": "dire",
-        "definition": "to say"
+        "definition": "to say",
+        "type": "verb"
     },
     {
         "word": "vedere",
-        "definition": "to see"
+        "definition": "to see",
+        "type": "verb"
     },
     {
         "word": "sembrare",
-        "definition": "to seem"
+        "definition": "to seem",
+        "type": "verb"
     },
     {
         "word": "vendere",
-        "definition": "to sell"
+        "definition": "to sell",
+        "type": "verb"
     },
     {
         "word": "gridare",
-        "definition": "to shout"
+        "definition": "to shout",
+        "type": "verb"
     },
     {
         "word": "mostrare",
-        "definition": "to show"
+        "definition": "to show",
+        "type": "verb"
     },
     {
         "word": "cantare",
-        "definition": "to sing"
+        "definition": "to sing",
+        "type": "verb"
     },
     {
         "word": "sedere",
-        "definition": "to sit"
+        "definition": "to sit",
+        "type": "verb"
     },
     {
         "word": "dormire",
-        "definition": "to sleep"
+        "definition": "to sleep",
+        "type": "verb"
     },
     {
         "word": "odorare",
-        "definition": "to smell"
+        "definition": "to smell",
+        "type": "verb"
     },
     {
         "word": "sorridere",
-        "definition": "to smile"
+        "definition": "to smile",
+        "type": "verb"
     },
     {
         "word": "fumare",
-        "definition": "to smoke"
+        "definition": "to smoke",
+        "type": "verb"
     },
     {
         "word": "nevicare",
-        "definition": "to snow"
+        "definition": "to snow",
+        "type": "verb"
     },
     {
         "word": "parlare",
-        "definition": "to speak"
+        "definition": "to speak",
+        "type": "verb"
     },
     {
         "word": "alzarsi",
-        "definition": "to get oneself up"
+        "definition": "to get oneself up",
+        "type": "verb"
     },
     {
         "word": "fermare",
-        "definition": "to stop"
+        "definition": "to stop",
+        "type": "verb"
     },
     {
         "word": "studiare",
-        "definition": "to study"
+        "definition": "to study",
+        "type": "verb"
     },
     {
         "word": "svegliarsi",
-        "definition": "to wake oneself up"
+        "definition": "to wake oneself up",
+        "type": "verb"
     },
     {
         "word": "lavorare",
-        "definition": "to work"
+        "definition": "to work",
+        "type": "verb"
     },
     {
         "word": "scrivere",
-        "definition": "to write"
+        "definition": "to write",
+        "type": "verb"
     },
     {
         "word": "lavarsi",
-        "definition": "to wash oneself"
+        "definition": "to wash oneself",
+        "type": "verb"
     }
 ]
