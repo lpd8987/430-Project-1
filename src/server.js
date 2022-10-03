@@ -1,11 +1,40 @@
 const http = require('http');
 const url = require('url');
-// const query = require('querystring');
+const query = require('querystring');
 
 const jsonHandler = require('./jsonResponses.js');
 const htmlHandler = require('./htmlResponses.js');
 
 const port = process.env.PORT || process.env.NODE_PORT || 3000;
+
+const parseParams = (request, response, handlerFunction) => {
+  const parsedContent = [];
+
+  request.on("error", () => {
+    response.statusCode = 400;
+    response.end();
+  });
+
+  request.on("data", (dataChunk) => {
+    parsedContent.push(dataChunk);
+  });
+
+  request.on("end", () => {
+    const parsedString = Buffer.concat(parsedContent).toString();
+    const params = query.parse(parsedString);
+
+    handlerFunction(request, response, params);
+  });
+}
+
+// Route POST requests
+const handlePOST = (request, response, parsedURL) => {
+  switch (parsedURL.pathname) {
+    case "/addVocab":
+      parseParams(request, request, jsonHandler.postVocab)
+      break;
+  }
+};
 
 // Route GET requests
 const handleGET = (request, response, parsedURL) => {
@@ -27,6 +56,9 @@ const handleGET = (request, response, parsedURL) => {
       break;
     case '/adverbs':
       jsonHandler.getAdverbJSON(request, response);
+      break;
+    case '/vocabulary':
+      jsonHandler.getVocabJSON(request, response);
       break;
     default:
       jsonHandler.JSONNotFound(request, response);
@@ -55,6 +87,7 @@ const onRequest = (request, response) => {
 
   switch (request.method) {
     case 'POST':
+      handlePOST(request, response, parsedURL);
       break;
     case 'HEAD':
       handleHEAD(request, response, parsedURL);

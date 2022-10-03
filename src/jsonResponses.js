@@ -1,4 +1,6 @@
-// const vocabList = {};
+//vocabList is an array of JSON objects to 
+//better reflect the format of the persistent data
+const vocabList = [];
 
 const fs = require('fs');
 
@@ -35,6 +37,10 @@ const getAdverbJSON = (request, response) => {
   getJSON(request, response, adverbs, 200);
 };
 
+const getVocabJSON = (request, response) => {
+  getJSON(request, response, JSON.stringify(vocabList), 200);
+};
+
 // Sends an error object (404 - not found) if the url is not found
 const JSONNotFound = (request, response) => {
   const jsonObj = {
@@ -63,8 +69,41 @@ const headNotFound = (request, response) => {
 };
 
 // POST
+const postVocab = (request, response, body) => {
+  const jsonObj = {
+    message: "Missing Required Parameters",
+  };
 
-// Server Error
+  //a new vocab word should include 3 parts:
+  //the italian word, the type of word, and its definition
+  if(!body.word || !body.type || !body.definition ) {
+    jsonObj.id = "missingParams";
+    return getJSON(request, response, jsonObj, 400);
+  }
+
+  //status is "update" by default
+  let status = 204;
+
+  //create a new vocab word if it is not already in the list
+  if(!vocabList[body.word]){
+    status = 201;
+    vocabList[body.word] = {};
+  }
+
+  //Assign data
+  vocabList[body.word].word = body.word;
+  vocabList[body.word].type = body.type;
+  vocabList[body.word].definition = body.definition;
+
+  if(status === 201){
+    jsonObj.message = "Created Successfully";
+    return getJSON(request, response, jsonObj, status);
+  }
+
+  return returnJSONHead(request, response, status);
+}
+
+// Server Error (not GET, HEAD, or POST)
 const serverError = (request, response) => {
   const jsonObj = {
     message: 'Something went wrong with the server.',
@@ -79,8 +118,10 @@ module.exports = {
   getNounJSON,
   getAdjectiveJSON,
   getAdverbJSON,
+  getVocabJSON,
   JSONNotFound,
   returnListHead,
   headNotFound,
+  postVocab,
   serverError,
 };

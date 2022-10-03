@@ -12,6 +12,12 @@
             let jsonResponse = await response.json();
             console.log(jsonResponse);
 
+            //for vocab list, will only get here if the user has not added any data.
+            if(jsonResponse.length < 1){
+                document.querySelector("#content").innerHTML = "<h2>List is currently empty.</h2>"
+                return;
+            }
+
             for(let i = 0; i < jsonResponse.length; i++){
                 createDiv(jsonResponse[i].word, jsonResponse[i].type, jsonResponse[i].definition, document.querySelector("#content"));
             }
@@ -37,16 +43,16 @@
             let typeAbbrev = "";
             switch(type){
                 case "verb":
-                    typeAbbrev = "v."
+                    typeAbbrev = "(v.)"
                     break;
                 case "noun":
-                    typeAbbrev = "n."
+                    typeAbbrev = "(n.)"
                     break;
                 case "adjective":
-                    typeAbbrev = "adj." 
+                    typeAbbrev = "(adj.)" 
                     break;
                 case "adverb":
-                    typeAbbrev = "adv." 
+                    typeAbbrev = "(adv.)" 
                     break;
             }
             /*Format should look something like:
@@ -95,6 +101,9 @@
 
             const getAdverbsBtn = document.querySelector("#get-adverbs");
             getAdverbsBtn.addEventListener("click", () => {fetchRequest(getAdverbsBtn)});
+
+            const getVocabBtn = document.querySelector("#get-vocab-list");
+            getVocabBtn.addEventListener("click", () => {fetchRequest(getVocabBtn)});
         };
 
         window.onload = init;
@@ -102,12 +111,23 @@
 </head>
 <body>
     <h1>Appunti Italiani</h1>
-    <button id="get-verbs" value="/verbs">GET Verbs</button>
-    <button id="get-nouns" value="/nouns">GET Nouns</button>
-    <button id="get-adjectives" value="/adjectives">GET Adjectives</button>
-    <button id="get-adverbs" value="/adverbs">GET Adverbs</button>
+    <div>
+        <button id="get-verbs" value="/verbs">GET Verbs</button>
+        <button id="get-nouns" value="/nouns">GET Nouns</button>
+        <button id="get-adjectives" value="/adjectives">GET Adjectives</button>
+        <button id="get-adverbs" value="/adverbs">GET Adverbs</button>
+        <button id="get-vocab-list" value="/vocabulary">GET Vocab List</button>
+    </div>
 
-    <button id="get-vocab-list" value="/vocabulary">GET Vocab List</button>
+    <form id="post-vocab" action="/addVocab" method="post">
+        <label for=""></label>
+        <select id="type-select">
+            <option value="verb">Verb</option>
+            <option value="noun">Noun</option>
+            <option value="adjective">Adjective</option>
+            <option value="adverb">Adverb</option>
+        </select>
+    </form>
 
     <div id="content">
 
