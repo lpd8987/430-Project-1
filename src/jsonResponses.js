@@ -97,6 +97,7 @@ const postVocab = (request, response, body) => {
 
   if(status === 201){
     jsonObj.message = "Created Successfully";
+    console.log("here.")
     return getJSON(request, response, jsonObj, status);
   }
 
@@ -114,6 +115,7 @@ const serverError = (request, response) => {
 };
 
 module.exports = {
+  getJSON,
   getVerbJSON,
   getNounJSON,
   getAdjectiveJSON,
