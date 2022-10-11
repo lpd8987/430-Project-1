@@ -12,7 +12,7 @@
             
             //Only time that something is not returned is when updated
             if(response.status === 204){
-                document.querySelector("#message").innerHTML = "<h2>Updated Successfully</h2>";
+                //document.querySelector("#message").innerHTML = "<h2>Updated Successfully</h2>";
                 return;
             }
 
@@ -24,6 +24,12 @@
             if(jsonResponse.message){
                 document.querySelector("#message").innerHTML = `<h2>${jsonResponse.message}</h2>`;
                 return;
+            }
+
+            //should only show on search
+            if(jsonResponse.word){
+                createDiv(jsonResponse.word, jsonResponse.type, jsonResponse.definition, document.querySelector("#content"));
+                return
             }
 
             //for vocab list, will only get here if the user has not added any data.
@@ -101,15 +107,15 @@
             const query = form.querySelector("#query-field");
             const type = form.querySelector("#type-select");
 
-            const params = `query=${query}&type=${type}`;
+            const params = `?query=${query.value.toString()}&type=${type.value.toString()}`;
 
-            let response = await fetch(action, {
+            const url = action + params;
+
+            let response = await fetch(url, {
                 method: method,
                 headers: {
-                    "Content-Type": "application/x-www-form-urlencoded",
                     "Accept": "application/json"
                 },
-                body: params
             })
 
             handleResponse(response);
@@ -206,6 +212,7 @@
             const searchVocab = (e) => {
                 e.preventDefault();
                 fetchRequestWithParams(searchForm);
+                return;
             }
 
 

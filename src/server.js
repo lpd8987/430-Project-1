@@ -7,7 +7,7 @@ const htmlHandler = require('./htmlResponses.js');
 
 const port = process.env.PORT || process.env.NODE_PORT || 3000;
 
-const parseParams = (request, response, handlerFunction) => {
+const parsePostParams = (request, response, handlerFunction) => {
   const parsedContent = [];
 
   request.on("error", () => {
@@ -23,6 +23,7 @@ const parseParams = (request, response, handlerFunction) => {
     const parsedString = Buffer.concat(parsedContent).toString();
     const params = query.parse(parsedString);
 
+    console.log(parsedString);
     handlerFunction(request, response, params);
   });
 }
@@ -32,13 +33,14 @@ const handlePOST = (request, response, parsedURL) => {
   switch (parsedURL.pathname) {
     case "/addVocab":
     default:
-      parseParams(request, response, jsonHandler.postVocab)
+      parsePostParams(request, response, jsonHandler.postVocab)
       break;
   }
 };
 
 // Route GET requests
 const handleGET = (request, response, parsedURL) => {
+  const searchQuery = query.parse(parsedURL.query);
   switch (parsedURL.pathname) {
     case '/':
       htmlHandler.getClient(request, response);
@@ -62,7 +64,8 @@ const handleGET = (request, response, parsedURL) => {
       jsonHandler.getVocabJSON(request, response);
       break;
     case '/search':
-      parseParams(request, response, jsonHandler.getWithParams);
+      jsonHandler.getWithParams(request, response, searchQuery);
+      break;
     default:
       jsonHandler.JSONNotFound(request, response);
       break;

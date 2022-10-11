@@ -44,21 +44,20 @@ const getVocabJSON = (request, response) => {
 };
 
 // Helper function to search a given list for a given query
-function searchList(query, list, searchType) {
+function searchList(query, list, type) {
   for(let i = 0; i < list.length; i++){
-    if(searchType === "word"){
-      if(list[i].word === body.query){
-        getJSON(request, response, JSON.stringify(list[i]), 200);
-        return 200;
+    if(type === "word"){
+      if(list[i].word === query){
+        return JSON.stringify(list[i]);
       }
     }
-    if(searchType === "definition"){
-      if(list[i].word === body.query){
-        getJSON(request, response, JSON.stringify(list[i]), 200);
-        return 200;
+    if(type === "definition"){
+      if(list[i].definition === query){
+        return JSON.stringify(list[i]);
       }
     }
   }
+  return 0;
 }
 
 //a get request with search parameters
@@ -70,19 +69,38 @@ const getWithParams = (request, response, body) => {
   /*searching for a word requires 2 params:
   the search query itself, and the type of search being performed
   (search by word or definition)*/
-  if(!body.query || !body.searchType ) {
+  if(!body.query || !body.type) {
     jsonObj.id = "missingParams";
     return getJSON(request, response, JSON.stringify(jsonObj), 400);
   }
 
-  let status = 404;
+  let wordObj = null;
 
   //search lists by the search type (only 5 lists, 5 searches)
-  status = searchList(body.query, verbs, body.searchType);
-  status = searchList(body.query, nouns, body.searchType);
-  status = searchList(body.query, adjectives, body.searchType);
-  status = searchList(body.query, adverbs, body.searchType);
-  stauts = searchList(body.query, vocabList, body.searchType);
+  wordObj = searchList(body.query, JSON.parse(verbs), body.type);
+  if(wordObj){
+    return getJSON(request, response, wordObj, 200);
+  }
+
+  wordObj = searchList(body.query, JSON.parse(nouns), body.type);
+  if(wordObj){
+    return getJSON(request, response, wordObj, 200);
+  }
+
+  wordObj = searchList(body.query, JSON.parse(adjectives), body.type);
+  if(wordObj){
+    return getJSON(request, response, wordObj, 200);
+  }
+
+  wordObj = searchList(body.query, JSON.parse(adverbs), body.type);
+  if(wordObj){
+    return getJSON(request, response, wordObj, 200);
+  }
+
+  wordObj = searchList(body.query, vocabList, body.type);
+  if(wordObj){
+    return getJSON(request, response, wordObj, 200);
+  }
 
   //should only not return 200 if nothing was found
   //else return 404, not found
