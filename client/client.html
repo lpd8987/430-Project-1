@@ -12,7 +12,7 @@
             
             //Only time that something is not returned is when updated
             if(response.status === 204){
-                document.querySelector("#content").innerHTML = "<h2>Updated Successfully</h2>";
+                document.querySelector("#message").innerHTML = "<h2>Updated Successfully</h2>";
                 return;
             }
 
@@ -22,13 +22,13 @@
 
             //Print a message if not printing a list
             if(jsonResponse.message){
-                document.querySelector("#content").innerHTML = `<h2>${jsonResponse.message}</h2>`;
+                document.querySelector("#message").innerHTML = `<h2>${jsonResponse.message}</h2>`;
                 return;
             }
 
             //for vocab list, will only get here if the user has not added any data.
             if(jsonResponse.length < 1){
-                document.querySelector("#content").innerHTML = "<h2>List is currently empty.</h2>"
+                document.querySelector("#message").innerHTML = "<h2>List is currently empty.</h2>"
                 return;
             }
 
@@ -39,7 +39,7 @@
         }
 
         //POST REQUESTS
-        const postRequest = async(form) => {
+        const formPostRequest = async(form) => {
             clearDivs(document.querySelector("#content"));
 
             const action = form.getAttribute("action");
@@ -53,6 +53,21 @@
 
             let response = await fetch(action, {
                 method: method,
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                    "Accept": "application/json"
+                },
+                body: params
+            })
+
+            handleResponse(response);
+        };
+
+        const buttonPostRequest = async(word, type, definition) => {
+            const params = `word=${word}&type=${type}&definition=${definition}`;
+
+            let response = await fetch("/addVocab", {
+                method: 'POST',
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded",
                     "Accept": "application/json"
@@ -77,6 +92,29 @@
             handleResponse(response);
         };
 
+        const fetchRequestWithParams = async(form) => {
+            clearDivs(document.querySelector("#content"));
+
+            const action = form.getAttribute("action");
+            const method = form.getAttribute("method");
+
+            const query = form.querySelector("#query-field");
+            const type = form.querySelector("#type-select");
+
+            const params = `query=${query}&type=${type}`;
+
+            let response = await fetch(action, {
+                method: method,
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                    "Accept": "application/json"
+                },
+                body: params
+            })
+
+            handleResponse(response);
+        };
+
         //Creates the divs that the content comes from
         function createDiv(word, type, definition, targetElement)
         {
@@ -95,6 +133,7 @@
                     typeAbbrev = "(adv.)" 
                     break;
             }
+
             /*Format should look something like:
             Word (part-of-speech)
             definition
@@ -111,13 +150,21 @@
             divContent.innerHTML = definition;
             newDiv.appendChild(divContent);
 
+            //Button to add to vocab list
             let addBtn = document.createElement("button");
-            addBtn.innerHTML = "Add to Vocab List"
+            addBtn.innerHTML = "Add to Vocab List";
+            addBtn.addEventListener("click", () => {buttonPostRequest(word, type, definition)});
             newDiv.appendChild(addBtn);
-            //addBtn.onclick = post function (will keep blank for now)
+
+            addBtn.addEventListener("click", () => {
+                addBtn.innerHTML = "Added!"
+                addBtn.style.backgroundColor = "green";
+                addBtn.disabled = true;
+            });
 
             targetElement.appendChild(newDiv);
         }
+
 
         //Clears all custom divs from the screen
         function clearDivs(targetElement) {
@@ -129,8 +176,9 @@
             }
         }
 
-        //Setup buttons and event listeners
+        
         const init = () => {
+            //Setup buttons and event listeners
             const getVerbsBtn = document.querySelector("#get-verbs");
             getVerbsBtn.addEventListener("click", () => {fetchRequest(getVerbsBtn)});
 
@@ -146,15 +194,23 @@
             const getVocabBtn = document.querySelector("#get-vocab-list");
             getVocabBtn.addEventListener("click", () => {fetchRequest(getVocabBtn)});
 
+            //Setup custom form
             const vocabForm = document.querySelector("#post-vocab");
-
             const postVocab = (e) => {
                 e.preventDefault();
-                postRequest(vocabForm);
+                formPostRequest(vocabForm);
                 return;
             }
 
+            const searchForm = document.querySelector("#search-vocab")
+            const searchVocab = (e) => {
+                e.preventDefault();
+                fetchRequestWithParams(searchForm);
+            }
+
+
             vocabForm.addEventListener("submit", postVocab);
+            searchForm.addEventListener("submit", searchVocab);
         };
 
         window.onload = init;
@@ -162,6 +218,7 @@
 </head>
 <body>
     <h1>Appunti Italiani</h1>
+    <!--Buttons-->
     <div>
         <button id="get-verbs" value="/verbs">GET Verbs</button>
         <button id="get-nouns" value="/nouns">GET Nouns</button>
@@ -170,6 +227,9 @@
         <button id="get-vocab-list" value="/vocabulary">GET Vocab List</button>
     </div>
 
+    <h2 id="message"></h2>
+
+    <!--Add Vocab-->
     <form id="post-vocab" action="/addVocab" method="post">
         <label for="word">Word: </label>
         <input id="word-field" type="text" name="word">
@@ -188,6 +248,21 @@
         <input type="submit" value="Add Vocab">
     </form>
 
+    <!--Search Vocab-->
+    <form id="search-vocab" action="/search" method="get">
+        <label for="query">Search: </label>
+        <input id="query-field" type="text" name="query">
+
+        <label for="type">Type: </label>
+        <select name="type" id="type-select">
+            <option value="word">By Word</option>
+            <option value="definition">By Definition</option>
+        </select>
+
+        <input type="submit" value="submit">
+    </form>
+
+    <!--Page Content-->
     <div id="content">
 
     </div>

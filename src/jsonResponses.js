@@ -9,6 +9,8 @@ const nouns = fs.readFileSync(`${__dirname}/../data/nouns.json`);
 const adjectives = fs.readFileSync(`${__dirname}/../data/adjectives.json`);
 const adverbs = fs.readFileSync(`${__dirname}/../data/adverbs.json`);
 
+const allWords = [];
+
 // GET
 // Sends the GET response
 const getJSON = (request, response, jsonObj, status) => {
@@ -39,6 +41,56 @@ const getAdverbJSON = (request, response) => {
 
 const getVocabJSON = (request, response) => {
   getJSON(request, response, JSON.stringify(vocabList), 200);
+};
+
+// Helper function to search a given list for a given query
+function searchList(query, list, searchType) {
+  for(let i = 0; i < list.length; i++){
+    if(searchType === "word"){
+      if(list[i].word === body.query){
+        getJSON(request, response, JSON.stringify(list[i]), 200);
+        return 200;
+      }
+    }
+    if(searchType === "definition"){
+      if(list[i].word === body.query){
+        getJSON(request, response, JSON.stringify(list[i]), 200);
+        return 200;
+      }
+    }
+  }
+}
+
+//a get request with search parameters
+const getWithParams = (request, response, body) => {
+  const jsonObj = {
+    message: "Missing Required Parameters",
+  };
+
+  /*searching for a word requires 2 params:
+  the search query itself, and the type of search being performed
+  (search by word or definition)*/
+  if(!body.query || !body.searchType ) {
+    jsonObj.id = "missingParams";
+    return getJSON(request, response, JSON.stringify(jsonObj), 400);
+  }
+
+  let status = 404;
+
+  //search lists by the search type (only 5 lists, 5 searches)
+  status = searchList(body.query, verbs, body.searchType);
+  status = searchList(body.query, nouns, body.searchType);
+  status = searchList(body.query, adjectives, body.searchType);
+  status = searchList(body.query, adverbs, body.searchType);
+  stauts = searchList(body.query, vocabList, body.searchType);
+
+  //should only not return 200 if nothing was found
+  //else return 404, not found
+  if(status != 200) {
+    jsonObj.message = "Term not found";
+    jsonObj.id = "notFound";
+    return getJSON(request, response, JSON.stringify(jsonObj), 404);
+  }
 };
 
 // Sends an error object (404 - not found) if the url is not found
@@ -122,6 +174,7 @@ module.exports = {
   getAdjectiveJSON,
   getAdverbJSON,
   getVocabJSON,
+  getWithParams,
   JSONNotFound,
   returnListHead,
   headNotFound,

@@ -61,6 +61,8 @@ const handleGET = (request, response, parsedURL) => {
     case '/vocabulary':
       jsonHandler.getVocabJSON(request, response);
       break;
+    case '/search':
+      parseParams(request, response, jsonHandler.getWithParams);
     default:
       jsonHandler.JSONNotFound(request, response);
       break;
