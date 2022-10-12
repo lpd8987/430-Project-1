@@ -10,30 +10,29 @@ const port = process.env.PORT || process.env.NODE_PORT || 3000;
 const parsePostParams = (request, response, handlerFunction) => {
   const parsedContent = [];
 
-  request.on("error", () => {
+  request.on('error', () => {
     response.statusCode = 400;
     response.end();
   });
 
-  request.on("data", (dataChunk) => {
+  request.on('data', (dataChunk) => {
     parsedContent.push(dataChunk);
   });
 
-  request.on("end", () => {
+  request.on('end', () => {
     const parsedString = Buffer.concat(parsedContent).toString();
     const params = query.parse(parsedString);
 
-    console.log(parsedString);
     handlerFunction(request, response, params);
   });
-}
+};
 
 // Route POST requests
 const handlePOST = (request, response, parsedURL) => {
   switch (parsedURL.pathname) {
-    case "/addVocab":
+    case '/addVocab':
     default:
-      parsePostParams(request, response, jsonHandler.postVocab)
+      parsePostParams(request, response, jsonHandler.postVocab);
       break;
   }
 };
