@@ -28,10 +28,10 @@
             console.log(jsonResponse);
 
             //Print a message if not printing a list
-            //if(jsonResponse.message){
-            //    document.querySelector("#message").innerHTML = `<h2>${jsonResponse.message}</h2>`;
-            //    return;
-            //}
+            if(jsonResponse.message){
+                document.querySelector("#message").innerHTML = `<h2>${jsonResponse.message}</h2>`;
+                return;
+            }
 
             //should only show on search
             if(jsonResponse.word){
