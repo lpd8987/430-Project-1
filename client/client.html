@@ -159,6 +159,7 @@
             newDiv.classList.add("data-entry");
             newDiv.style.backgroundColor = "white";
             newDiv.style.color = "black";
+            newDiv.style.cursor = "pointer";
             
             let divTitle = document.createElement("h2");
             divTitle.innerHTML = `${word} ${typeAbbrev}`;
@@ -166,7 +167,16 @@
 
             let divContent = document.createElement("p");
             divContent.innerHTML = definition;
+            divContent.style.display = "none";
             newDiv.appendChild(divContent);
+            newDiv.addEventListener("click", () => {
+                if(divContent.style.display === "block"){
+                    divContent.style.display = "none";
+                }
+                else {
+                    divContent.style.display = "block";
+                }
+            });
 
             //Button to add to vocab list
             let addBtn = document.createElement("button");
@@ -201,12 +211,10 @@
             if(targetElement.style.display === "block"){
                 targetElement.style.display = "none";
                 button.style.backgroundColor = "white";
-                //targetElement.style.border = "none";
                 button.style.color = "black";
             }
             else {
                 targetElement.style.display = "block";
-                //targetElement.style.border = "1px solid rgb(0, 89, 255)";
                 button.style.backgroundColor = "rgb(0, 89, 255)";
                 button.style.color = "white";
             }
@@ -294,8 +302,8 @@
         <input class="button mt-3" type="submit" value="Submit">
     </form>
 
+    <!--User Data-->
     <section class="m-3 p-3">
-        <!--User Data-->
         <h2 class="subtitle has-text-light is-size-3 m-3">User Data:</h2>
         <div class="content">
             <button class="button" id="get-vocab-list" value="/vocabulary">My Vocab List</button>
@@ -303,7 +311,7 @@
         </div>
     </section>
 
-
+    <!--Message-->
     <h2 class="content p-3 m-3 is-size-5" id="message"></h2>
 
     <!--Add Vocab Form-->
